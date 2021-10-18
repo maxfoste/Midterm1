@@ -1,14 +1,15 @@
 package pkgTestShape;
-
+import pkgShape.Circle;
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-public class SampleTest {
-
+public class CircleTest {
+	
 	@Test
 	public void test() {
-		assertEquals(1,1);
+		Circle C = new Circle();
+		assertEquals(314.15, Math.floor(C.area(10)*100)/100);
+		
 		
 	}
 
